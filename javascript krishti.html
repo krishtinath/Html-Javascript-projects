@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>discount variable</title>
+
+<body>
+
+price:<input type="number" id="pr" value="100"><br></br>
+discount:<input type="number" id="dis" value="100">
+New price:<input type="number" id="Newprice" value="100">
+<p>Click the button to change the number of the number field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let p= document.getElementById("pr").value;
+   let d= document.getElementById("dis").value;
+   x=(p*d)/100
+  
+  np= p-x;
+  document.getElementById("Newprice").value=np;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Practice of +</title>
+</head>
+<body>
+<p>Add value of x and y</p> 
+X value:<input type="number" id ="pr" value="10"><br></br>
+Y value:<input type="number" id ="prr" value="10"><br></br>
+Z value:<input type="number" id ="prrr" value="10"><disabled ="true">
+<button onclick="myFunction()">Try</button>
+<p id ="demo"></p>
+<script>
+function myFunction(){
+let x=parseInt(document.getElementById("pr").value);
+let y=parseInt(document.getElementById("prr").value);
+z = x+y;
+document.getElementById("prrr").value=z;
+document.getElementById("demo").innerHTML= "sum of x and y:"+z;
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
