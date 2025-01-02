@@ -1,0 +1,48 @@
+<html>
+<body>
+
+Number of class:<input type="number" id="class" value="14"><br></br>
+Marks:<input type="number" id="marks" value="14" ><br></br>
+<p> calculate class number</p>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(){
+let x= document.getElementById("class").value;
+if(x >= 10&&x<= 14){
+m = 10;
+}
+else if (x >= 8&&x <= 9){
+m = 9;
+
+}
+else if (x >= 6&&x<= 7){
+m = 8;
+}
+else{
+m = 0;
+}
+document.getElementById("marks").value= m;
+
+if(m==0){
+document.getElementById("marks").style.color="red";
+}
+else{
+document.getElementById("marks").style.color="green";
+}
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
